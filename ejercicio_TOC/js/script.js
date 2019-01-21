@@ -1,14 +1,17 @@
 window.onload = function() {
-
-   var num_links = document.getElementsByTagName("a").length;
+    // Número de enlaces que hay en el documento
+    var num_links = document.getElementsByTagName("a").length;
     console.log("El número de enlaces es de: " + num_links);
 
+    // Número de párrafos que hay en el documento
     var num_parrafos = document.getElementsByTagName("p").length;
     console.log("El número de párrafos es de: " + num_parrafos);
 
+    // Penúltimo de enlace que hay en el documento
     var penultimo_link = document.getElementsByTagName("a")[num_links -2];
     console.log("El penúltimo enlace es: " + penultimo_link);
 
+    // Último de enlace que hay en el documento
     var ultimo_link = document.getElementsByTagName("a")[num_links - 1];
     console.log("El último de párrafos es de: " + ultimo_link);
    
@@ -16,11 +19,9 @@ window.onload = function() {
     var linkBuscado = "http://www.jurassicpark.com";
 
     console.log(busquedaLink(arrayLinks, linkBuscado));
-
-    var p = document.getElementsByTagName("p");
-    console.log(contadorLinksP(p));
 };
 
+// Devuelve el número de enlaces que redirijan a la url pasada 
 function busquedaLink(arrayLink, link){
    var contador = 0;
     for (i = 0; i < arrayLink.length; i ++){
@@ -31,6 +32,7 @@ function busquedaLink(arrayLink, link){
     return contador;
 }
 
+// Devuelve el número de enlaces por cada párrafo del documento
 function contadorLinksP (arrayP){
     var resultados = new Array();
     for (i = 0; i < arrayP.length; i ++){
