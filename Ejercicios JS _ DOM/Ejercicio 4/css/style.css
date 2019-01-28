@@ -1,0 +1,15 @@
+#contenedor{
+    margin: auto;
+    width: 50%;
+}
+div[id^='cuadrado']{
+    width: 200px; 
+    height: 200px;
+    float: left;
+    margin: 2%;
+    border: solid 1px black;
+    background-color: #DDD;
+}
+.rompe{
+    clear: both;
+}
