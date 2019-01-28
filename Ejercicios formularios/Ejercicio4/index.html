@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6.4</title>
+    <style>
+        p {
+            color: #7c0a02;
+        }
+    </style>
+</head>
+<body onload="init()">
+<form>
+    <fieldset >
+        <p id="nombreError"></p>
+        <label for="nombre">Nombre</label><br/>
+        <input type="text" id="nombre">
+    </fieldset>
+    <fieldset>
+        <p id="correoError"></p>
+        <label for="correo">Correo</label><br/>
+        <input type="text" id="correo">
+    </fieldset>
+    <fieldset>
+        <p id="pass1Error"></p>
+        <label for="pass1">Contraseña</label><br/>
+        <input type="password" id="pass1">
+    </fieldset>
+    <fieldset>
+        <p id="pass2Error"></p>
+        <label for="pass2">Repite la Contraseña</label><br/>
+        <input type="password" id="pass2">
+    </fieldset>
+    <fieldset>
+        <p id="resultadoError"></p>
+        <label for="resultado">Resultado de la operación</label>
+        <span id="num1"></span> + <span id="num2"></span> =
+        <input type="number" id="resultado">
+    </fieldset>
+    <fieldset>
+        <input type="checkbox" id="check" onclick="myCheck()">
+        <label for="check">Acepto las condiciones</label>
+    </fieldset>
+    <button type="submit" id="submit" disabled onclick="return comprobarForm();">Crear Compte</button>
+</form>
+</body>
+</html>
