@@ -1,11 +1,17 @@
 window.onload = function() {
-    var parrafo = document.getElementById('paragraf');
+    var formulario = document.forms[0];
+    var tipos = [];
+    var valores = retornaValor(formulario, tipos);
+    console.log(valores);
 };
 
 function validateForm() {
     var formulario = document.forms[0];
     var tipos = [];
     var valores = retornaValor(formulario, tipos);
+    for (i = 0; i < valores.length; i++) {
+        valores[i] = ' ' + valores[i];
+    }
     document.getElementById('paragraf').innerHTML = "Continguts dels diferents camps: " + valores;
     console.log(valores);
     return false;
@@ -25,7 +31,7 @@ function retornaValor(formulario, tipos) {
                     valores.push(elemento.value);
                 }
             } else {
-                if (tipos[i] == "select") {
+                if (tipos[i] == "select-one") {
                     valores.push(elemento.options[elemento.selectedIndex].value);
                 }
             }
