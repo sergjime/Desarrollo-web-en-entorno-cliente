@@ -12,7 +12,6 @@ function validateForm() {
         valores[i] = ' ' + valores[i];
     }
     document.getElementById('paragraf').innerHTML = "Continguts dels diferents camps: " + valores;
-    console.log(valores);
     return false;
 }
 
