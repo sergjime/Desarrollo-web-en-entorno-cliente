@@ -2,7 +2,6 @@ window.onload = function() {
     var formulario = document.forms[0];
     var tipos = [];
     var valores = retornaValor(formulario, tipos);
-    console.log(valores);
 };
 
 function validateForm() {
