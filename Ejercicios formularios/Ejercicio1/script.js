@@ -16,7 +16,7 @@ function validateForm() {
     return false;
 }
 
-// Esta función devolverá una array de valores en el cual estarán los valores de cada tipo de elemento
+// Esta función devolverá un array de valores en el cual estarán los valores de cada tipo de elemento
 function retornaValor(formulario, tipos) {
     var valores = [];
     for (i = 0; i < formulario.elements.length; i++) {
