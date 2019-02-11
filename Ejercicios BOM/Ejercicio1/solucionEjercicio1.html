@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>DWEC_P04 Exercici 1</h1>
+
+<p id="demo"></p>
+
+<script>
+window.onload = function() {
+	//deman el nom
+	var person = prompt("Introdueix el teu nom:", "");	
+	//mostrar-lo en un paràgraf
+	document.getElementById("demo").innerHTML = person;	
+	//en majúscula en la barra d’estat
+	window.status = person.toUpperCase();
+	//en un alert
+	window.alert(person);
+	//en majúscula en el títol de la pàgina principal		
+	document.title = person.toUpperCase();
+	
+}
+</script>
+
+</body>
+</html>
