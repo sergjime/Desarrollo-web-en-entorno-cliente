@@ -1,8 +1,7 @@
 window.onload = function() {
     let fecha = new Date();
     let parrafo = document.createElement("p");
-    let horaActual = setInterval(function(){ cambia(fecha); }, 1000);
-    let textoHora = document.createTextNode(cambia(fecha));
+    let textoHora = document.createTextNode(setInterval(function(){ cambia(fecha); }, 1000));
     parrafo.appendChild(textoHora);
     document.body.appendChild(parrafo);
 }
