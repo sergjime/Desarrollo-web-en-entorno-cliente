@@ -1,12 +1,12 @@
-window.onload = function() {
-    let fecha = new Date();
+
+window.onload = function() { 
     let parrafo = document.createElement("p");
-    let textoHora = document.createTextNode(setInterval(function(){ cambia(fecha); }, 1000));
-    parrafo.appendChild(textoHora);
+    parrafo.appendChild(setInterval(function(){ cambia(); }, 1000));
     document.body.appendChild(parrafo);
 }
 
-function cambia(fecha){
+function cambia(){
+    let fecha = new Date();
     let hora = fecha.getHours();
     let minutos = fecha.getMinutes();
     let segundos = fecha.getSeconds();
