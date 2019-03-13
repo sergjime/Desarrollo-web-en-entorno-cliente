@@ -1,7 +1,3 @@
-window.onload = function() {
-    alert('SCRIPT LISTO');
-};
-
 function numRandom(inferior, superior) {
     return Math.floor((Math.random() * (superior - inferior + 1)) + inferior);
 }
